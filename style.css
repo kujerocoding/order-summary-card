@@ -26,6 +26,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     margin: auto;
 
 }
@@ -33,10 +34,11 @@ body {
 .main__container {
     display: flex;
     flex-direction: column;
+    align-items: center;
     margin-inline: 20px;
     width: 335px;
     background-color: white;
-    border-radius: 20px 20px 0 0;
+    border-radius: 20px;
 }
 
 .main__img-container {
@@ -63,4 +65,70 @@ body {
     line-height: 1.5rem;
     text-align: center;
     padding-bottom: 20px;
+    padding-inline: 40px;
+}
+
+
+.main__price-container {
+    background-color: var(--VERYPALEBLUE);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    border-radius: 10px;
+    padding: 20px 15px;
+}
+
+.price__text-container {
+    margin-left: -20px;
+}
+
+.price__text {
+    color: var(--DARKBLUE);
+    font-weight: 900;
+}
+
+.price__value {
+    color: var(--DESATURATEDBLUE);
+}
+
+.price__change-link {
+    color: var(--BRIGHTBLUE);
+    font-weight: 900;
+}
+
+.main__btn-container {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    padding: 20px 0 20px 0;
+}
+
+.btn__proceed, .btn__cancel {
+    all: unset;
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    font-weight: 900;
+    cursor: pointer;
+
+}
+
+.btn__proceed {
+    background-color: var(--BRIGHTBLUE);
+    color: var(--VERYPALEBLUE);
+    box-shadow: 0 10px 30px var(--DESATURATEDBLUE);
+}
+
+.btn__cancel {
+    margin-top: 10px;
+    color: var(--DESATURATEDBLUE);
+}
+
+.btn__proceed:hover, .price__change-link:hover  {
+    opacity: 70%;
+}
+
+.btn__cancel:hover {
+    color: var(--DARKBLUE);
 }
