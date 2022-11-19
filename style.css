@@ -19,4 +19,48 @@
 body {
     font-family: var(--FONT);
     font-size: var(--FS);
+    height: 100vh;
+    background-image: url(/images/pattern-background-mobile.svg);
+    background-repeat: no-repeat;
+    background-color: var(--PALEBLUE);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+
+}
+
+.main__container {
+    display: flex;
+    flex-direction: column;
+    margin-inline: 20px;
+    width: 335px;
+    background-color: white;
+    border-radius: 20px 20px 0 0;
+}
+
+.main__img-container {
+    width: 335px;
+    height: 150px;
+}
+
+.main__img {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px 20px 0 0;
+}
+
+.primary-text {
+    color: var(--DARKBLUE);
+    font-weight: 900;
+    text-align: center;
+    padding-block: 20px;
+}
+
+.primary-info {
+    color: var(--DESATURATEDBLUE);
+    font-weight: 500;
+    line-height: 1.5rem;
+    text-align: center;
+    padding-bottom: 20px;
 }
